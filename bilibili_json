@@ -1,0 +1,41 @@
+{
+  "code": 0,
+  "message": "0",
+  "ttl": 1,
+  "data": {
+    "fan_recent_thirty": {
+      "follow": {
+        "20200214": 1,
+        "20200215": 1,
+        "20200219": 1,
+        "20200303": 1,
+        "20200308": 1
+      },
+      "unfollow": {
+        "20200214": 0,
+        "20200215": 0,
+        "20200219": 0,
+        "20200303": 0,
+        "20200308": 0
+      }
+    },
+    "inc_coin": 0,
+    "inc_elec": 0,
+    "inc_fav": 0,
+    "inc_like": 0,
+    "inc_share": 0,
+    "incr_click": 2,
+    "incr_dm": 0,
+    "incr_fans": 1,
+    "incr_reply": 0,
+    "total_click": 68,
+    "total_coin": 2,
+    "total_dm": 2,
+    "total_elec": 0,
+    "total_fans": 5,
+    "total_fav": 3,
+    "total_like": 5,
+    "total_reply": 3,
+    "total_share": 4
+  }
+}
