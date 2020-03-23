@@ -1,5 +1,10 @@
+// fetch from
+// https://member.bilibili.com/x/web/data/playanalysis?tmid=477513673&copyright=0
+// TODO login
+
 use std::fs::File;
 use serde::Deserialize;
+use std::env;
 
 #[derive(Deserialize, Debug)]
 struct PlayList {
@@ -24,7 +29,8 @@ struct BilibiliData {
 
 fn main() {
     println!("Hello, world!");
-    let file = File::open("bilibili.json").expect("could not open file");
+    let file_path = env::var("FILE_PATH").unwrap();
+    let file = File::open(file_path).expect("could not open file");
     let data_json: BilibiliData = serde_json::from_reader(file).expect("error while reading json");
 
     let header = Header(
