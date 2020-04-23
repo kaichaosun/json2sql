@@ -1,5 +1,5 @@
 // fetch from
-// https://member.bilibili.com/x/web/data/playanalysis?tmid=477513673&copyright=0
+// https://member.bilibili.com/x/web/data/playanalysis?tmid=67358318&copyright=0
 // TODO login
 
 use std::fs::File;
@@ -68,7 +68,7 @@ struct Data(u32, String, u32, u32, u32, u32, String);
 fn generate_sql(csv_data: &(Header, Vec<Data>)) -> String {
     let (header, data) = csv_data;
     let base_sql = format!(
-        "INSERT INTO bilibili_performance ( {}, {}, {}, {}, {}, {}, {} ) VALUES ",
+        "INSERT INTO bilibili_videos_performance ( {}, {}, {}, {}, {}, {}, {} ) VALUES ",
         header.0,
         header.1,
         header.2,
